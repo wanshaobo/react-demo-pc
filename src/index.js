@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, HashRouter, Switch } from 'react-router-dom'
+import { Route, HashRouter, Switch } from 'react-router-dom'
 import './index.css';
 import App from './App';
 import ScrollOrientation from './view/ScrollOrientation';
-import * as serviceWorker from './serviceWorker';
 import ScrollOrientationFloat from "./view/ScrollorientationFloat";
+import DynamicLoadImg from "./view/DynamicLoadImg";
+import WaterFall from "./view/WaterFall";
+import WaterFallInfinite from "./view/WaterFallInfinite";
+
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
 	<HashRouter>
 		<Switch>
-			<Route path='/Scroll-orientation' component={ ScrollOrientation }></Route>
-			<Route path='/Scroll-orientation-float' component={ ScrollOrientationFloat }></Route>
+			<Route path='/scroll-orientation' component={ ScrollOrientation }></Route>
+			<Route path='/scroll-orientation-float' component={ ScrollOrientationFloat }></Route>
+			<Route path='/dynamic-load-img' component={ DynamicLoadImg }></Route>
+			<Route path='/water-full' component={ WaterFall }></Route>
+			<Route path='/water-full-infinite' component={ WaterFallInfinite }></Route>
+
 			<Route path='/' component={ App }></Route>
 		</Switch>
 	</HashRouter>,

@@ -1,4 +1,48 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
+}
+a{
+    text-decoration: none;
+    out-line: none;
+    color: #000000;
+}
+
+
+/*App*/
+.home-item li{
+    border: 1px solid #ff6700;
+    width: 120px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+.home-item a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+/*DynamicLoadImg*/
+.dli-img{
+    background: #ff00bf;
+    display: inline-block;
+    fontSize: 30px;
+    color: #ffffff;
+    verticalAlign: top;
+}
+.dli-img img{
+    height: 100%;
+}
+
+/*WaterFull*/
+.wf-img{
+    width: 1000px;
+}
+.wf-img img{
+    width: 100%;
 }
