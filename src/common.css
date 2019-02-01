@@ -8,12 +8,23 @@ a{
     out-line: none;
     color: #000000;
 }
+.btn{
+    display: inline-block;
+    border: 1px solid #ff6700;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
 
 
 /*App*/
 .home-item li{
     border: 1px solid #ff6700;
-    width: 120px;
+    width: 160px;
     border-radius: 5px;
     margin-top: 10px;
     margin-left: 10px;

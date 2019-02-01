@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import '../common.css';
+import App from "../App";
+// import $ from 'jquery';
 
 //2个全局变量
 let scrollX = 0;//水平方向滚动的实时距离
@@ -7,7 +9,12 @@ let pageW = 0;//水平方向可以滚动的最大距离
 
 class ScrollOrientation extends Component {
 
+	// static defaultProps = {
+		//option: null//read only
+	// }
+
 	componentWillMount(){
+		console.log('ScrollOrientation.js');
 		document.addEventListener("wheel", this.onwheel.bind(this), false);//监听滚轮事件
 	}
 
@@ -52,6 +59,10 @@ class ScrollOrientation extends Component {
 			</div>
 		);
 	}
+}
+
+ScrollOrientation.defaultProps = {
+	//option: null//read only
 }
 
 export default ScrollOrientation;

@@ -40,7 +40,7 @@ class WaterFullInfinite extends Component {
 
 	componentWillMount(){
 
-		document.addEventListener("wheel", this.onwheel.bind(this), false);//监听滚轮事件
+		// document.addEventListener("wheel", this.onwheel.bind(this), false);//监听滚轮事件
 		window.addEventListener("scroll", this.onscroll.bind(this), false);//监听滚动条事件
 	}
 
@@ -54,17 +54,17 @@ class WaterFullInfinite extends Component {
 
 	componentWillUnmount(){
 		window.onscroll = null
-		console.log(3);
-		document.removeEventListener("wheel", this.onwheel.bind(this), false);//销毁事件
+		// console.log(3);
+		// document.removeEventListener("wheel", this.onwheel.bind(this), false);//销毁事件
 		window.removeEventListener("scroll", this.onscroll, false);//销毁事件
 	}
 
-	onwheel(e){
-		// console.log(e.deltaY);
-	}
+	// onwheel(e){
+	// 	console.log(e.deltaY);
+	// }
 
 	onscroll(){
-		console.log(2);
+		// console.log(2);
 		let scrollTop = 0;//纵向滚动条的位置
 		if(document.documentElement && document.documentElement.scrollTop) {
 			scrollTop = document.documentElement.scrollTop;//chrome
@@ -92,7 +92,7 @@ class WaterFullInfinite extends Component {
 	}
 
 	handleImageLoaded(e){
-		console.log(e.target.height);
+		// console.log(e.target.height);
 	}
 
 	handleImageErrored(){

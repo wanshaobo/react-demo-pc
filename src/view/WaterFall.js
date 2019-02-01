@@ -36,7 +36,7 @@ class WaterFull extends Component {
 	}
 
 	componentWillUnmount(){
-		console.log(4);
+		// console.log(4);
 		document.removeEventListener("wheel", this.onwheel.bind(this), false);//销毁监听事件
 		document.removeEventListener("scroll", this.onscroll, false);//销毁监听事件
 	}
@@ -46,7 +46,7 @@ class WaterFull extends Component {
 	}
 
 	onscroll(){
-		console.log(1);
+		// console.log(1);
 		if(this.state.imgIndex === 9){
 			return
 		}
@@ -69,7 +69,7 @@ class WaterFull extends Component {
 	}
 
 	handleImageLoaded(e){
-		console.log(e.target.height);
+		// console.log(e.target.height);
 	}
 
 	handleImageErrored(){

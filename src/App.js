@@ -4,12 +4,19 @@ import './common.css';
 
 class App extends Component {
 
+	constructor(props) {
+		super(props);
+		this.state = {
+
+		}
+	}
+
 	componentWillMount(){
 
 	}
 
 	componentDidMount(){
-
+		console.log('APP.js');
 	}
 
 	componentWillUnmount(){
@@ -24,6 +31,9 @@ class App extends Component {
 				<li><Link to="dynamic-load-img">动态加载图片</Link></li>
 				<li><Link to="water-full">瀑布流</Link></li>
 				<li><Link to="water-full-infinite">无限瀑布流</Link></li>
+				<li><Link to="dynamic-imports">代码分离-动态导入</Link></li>
+				<li><Link to="level-two">3层路由示例</Link></li>
+				<li><Link to="xyz">404</Link></li>
 			</ul>
 		);
 	}

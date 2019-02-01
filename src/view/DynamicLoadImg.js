@@ -59,7 +59,7 @@ class DynamicLoadImg extends Component {
 		document.getElementById('outerEle').style.width = 1001 + imgW + 'px';//多了1px作为修订值
 		//水平方向可以滚动的最大距离
 		pageW = 1001 + imgW - clientWidth;
-		console.log(e.target.width);
+		// console.log(e.target.width);
 	}
 
 	handleImageErrored(){
